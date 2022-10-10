@@ -21,7 +21,7 @@ Our model achieves the following performance on:
 
 1. Node classification accuracy comparison:
 
-   <img src="/Users/shensiqi/Desktop/GNN/ICDE2023/DA_GDA /accuracy.png" alt="accuracy" style="zoom:33%;" />
+   <img src="[/Users/shensiqi/Desktop/GNN/ICDE2023/DA_GDA /accuracy.png](https://github.com/infinity1009/DA-GDA/blob/main/accuracy.png)" alt="accuracy" style="zoom:33%;" />
 
 2. Efficiency evaluation:
 
