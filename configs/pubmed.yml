@@ -1,0 +1,42 @@
+GCN:
+  drop_out: 0.25
+  hiddim: 64
+  gnn_learning_rate: 0.008
+  arch_learning_rate: 0.029
+  arch_learning_rate_min: 0.003
+  gnn_weight_decay: 0.001
+  arch_weighty_decay: 0.005
+  aug_M: 3
+  max_lambda: 0.45
+  conf: 0.43
+  tem: 0.27
+  reg_loss: 'l2'
+  mean_acc: 0.8036
+GraphSAGE:
+  drop_out: 0.4
+  hiddim: 32
+  gnn_learning_rate: 0.017
+  arch_learning_rate: 0.044
+  arch_learning_rate_min: 0.01
+  gnn_weight_decay: 0.001
+  arch_weighty_decay: 0.001
+  aug_M: 2
+  max_lambda: 0.15
+  conf: 0.2
+  tem: 0.43
+  reg_loss: 'l2'
+  mean_acc: 0.7947
+GAT:
+  drop_out: 0.35
+  hiddim: 32
+  gnn_learning_rate: 0.031
+  arch_learning_rate: 0.045
+  arch_learning_rate_min: 0.007
+  gnn_weight_decay: 0.0005
+  arch_weighty_decay: 0.005
+  aug_M: 2
+  max_lambda: 0.1
+  conf: 0.33
+  tem: 0.39
+  reg_loss: 'l2'
+  mean_acc: 0.7893

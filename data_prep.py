@@ -179,14 +179,8 @@ def prepare_data(args):
     labels = labels.cuda()
     index = idx_train.cuda(), idx_val.cuda(), idx_test.cuda()
 
-    if e == 1.0 and Path.exists(f'./metric/{args.dataset}_lg_s.pkl'):
-        lg_s = pkl.load(open(f'./metric/{args.dataset}_lg_s.pkl', 'rb')).cuda()
-    else:
-        lg_s = None
-
-    if f == 1.0 and Path.exists(f'./metric/{args.dataset}_node_s.pkl'):
-        node_s = pkl.load(open(f'./metric/{args.dataset}_node_s.pkl', 'rb')).squeeze(1).cuda()
-    else:
-        node_s = None
+    lg_s = pkl.load(open(f'./metric/{args.dataset}_lg_s.pkl', 'rb')).cuda()
+    
+    node_s = pkl.load(open(f'./metric/{args.dataset}_node_s.pkl', 'rb')).squeeze(1).cuda()
 
     return graph, labels, index, features.size(0), nclass, nfeat, lg_s, node_s

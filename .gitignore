@@ -1,5 +1,8 @@
 __pycache__/
-*/
+efficiency/
+line_graph/
+metric/
+new_metho
 tuning*.py 
 *orig.py
 eff*
